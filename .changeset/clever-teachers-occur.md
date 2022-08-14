@@ -1,0 +1,5 @@
+---
+"@packages/components": major
+---
+
+test
