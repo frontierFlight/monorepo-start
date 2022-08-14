@@ -1,0 +1,20 @@
+{
+  "name": "monorepo-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm  --filter ./packages/** build",
+    "changeset": "changeset",
+    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
+    "version-packages": "changeset version",
+    "preinstall": "node ./scripts/preinstall.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.24.3"
+  }
+}
